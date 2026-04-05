@@ -1,0 +1,109 @@
+{
+  "table_name": "shopping_preferences",
+  "description": "Customer Shopping Preferences Dataset with 3900 records capturing consumer behavior and purchasing patterns.",
+  "columns": [
+    {
+      "name": "customer_id",
+      "type": "integer",
+      "description": "Unique identifier for each customer"
+    },
+    {
+      "name": "age",
+      "type": "integer",
+      "description": "Age of the customer"
+    },
+    {
+      "name": "gender",
+      "type": "text",
+      "description": "Gender of the customer. Stored values: 'Male', 'Female'"
+    },
+    {
+      "name": "item_purchased",
+      "type": "text",
+      "description": "The item purchased by the customer"
+    },
+    {
+      "name": "category",
+      "type": "text",
+      "description": "Category of the item purchased (e.g., Clothing, Footwear, Accessories)"
+    },
+    {
+      "name": "purchase_amount_usd",
+      "type": "numeric",
+      "description": "The amount of the purchase in USD"
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "description": "Location/state where the purchase was made"
+    },
+    {
+      "name": "size",
+      "type": "text",
+      "description": "Size of the purchased item (S, M, L, XL)"
+    },
+    {
+      "name": "color",
+      "type": "text",
+      "description": "Color of the purchased item. Stored values use Title Case e.g. 'Pink', 'Blue', 'Red', 'Green', 'Black', 'White', 'Gray', 'Yellow', 'Purple', 'Orange', 'Brown', 'Beige', 'Cyan', 'Magenta', 'Olive', 'Teal', 'Lavender', 'Maroon', 'Silver', 'Gold'"
+    },
+    {
+      "name": "season",
+      "type": "text",
+      "description": "Season during which the purchase was made. Stored values: 'Spring', 'Summer', 'Fall', 'Winter'"
+    },
+    {
+      "name": "review_rating",
+      "type": "numeric",
+      "description": "Rating given by the customer (1.0 to 5.0)"
+    },
+    {
+      "name": "subscription_status",
+      "type": "text",
+      "description": "Indicates if the customer has a subscription. Stored values: 'Yes', 'No'"
+    },
+    {
+      "name": "shipping_type",
+      "type": "text",
+      "description": "Type of shipping chosen (e.g., Free Shipping, Express, Standard)"
+    },
+    {
+      "name": "discount_applied",
+      "type": "text",
+      "description": "Indicates if a discount was applied. Stored values: 'Yes', 'No'"
+    },
+    {
+      "name": "promo_code_used",
+      "type": "text",
+      "description": "Indicates if a promo code was used. Stored values: 'Yes', 'No'"
+    },
+    {
+      "name": "previous_purchases",
+      "type": "integer",
+      "description": "Total count of previous transactions by the customer"
+    },
+    {
+      "name": "payment_method",
+      "type": "text",
+      "description": "Payment method used for the transaction (e.g., Credit Card, PayPal, Cash)"
+    },
+    {
+      "name": "preferred_payment_method",
+      "type": "text",
+      "description": "Customer's most preferred payment method overall (e.g., Credit Card, PayPal, Cash)"
+    },
+    {
+      "name": "frequency_of_purchases",
+      "type": "text",
+      "description": "How often the customer makes purchases (Weekly, Fortnightly, Monthly, Quarterly, Annually, Every 3 Months, Bi-Weekly)"
+    }
+  ],
+  "sample_questions": [
+    "What is the average purchase amount by gender?",
+    "Which category has the most purchases?",
+    "How many customers use promo codes?",
+    "What is the most popular payment method?",
+    "Show top 10 customers by previous purchases",
+    "What is the average review rating per season?"
+  ]
+}

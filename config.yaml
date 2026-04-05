@@ -1,0 +1,23 @@
+supabase:
+  table_name: "shopping_preferences"
+
+llm:
+  provider: "groq"
+  model: "llama-3.3-70b-versatile"  # Options: llama-3.3-70b-versatile, llama3-70b-8192, mixtral-8x7b-32768
+  temperature: 0.0
+  max_tokens: 4096
+  top_p: 1.0
+  request_timeout: 30
+
+data:
+  max_display_rows: 100        # Rows below this → display in UI
+  large_data_threshold: 100   # Rows above this → offer download or stats
+
+langsmith:
+  project_name: "nlp-to-sql"
+  tracing_enabled: true
+
+guardrails:
+  block_destructive_queries: true   # Block DROP, DELETE, UPDATE, INSERT
+  allowed_operations: ["SELECT"]
+  max_query_length: 5000
